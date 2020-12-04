@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import OrderSummaryItem from "./OrderSummaryItem";
 import ShoppingCartItem from "./ShoppingCartItem";
 
-export default function FixedContainer() {
+export default function ShoppingCart() {
   return (
     <React.Fragment>
       <CssBaseline />
