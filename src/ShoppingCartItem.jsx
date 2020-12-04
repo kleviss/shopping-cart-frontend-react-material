@@ -7,26 +7,22 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
-    minWidth: 275,
-    marginTop: "1rem"
+    display: "flex",
+    marginTop: 15
   },
-  bullet: {
-    display: "inline-block",
-    margin: "0 2px",
-    transform: "scale(0.8)"
+  details: {
+    display: "flex",
+    flexDirection: "column"
   },
-  title: {
-    fontSize: 14
-  },
-  pos: {
-    marginBottom: 12
+  content: {
+    flex: "1 0 auto"
   },
   cover: {
     width: 151
   }
-});
+}));
 
 export default function ShoppingCartItem() {
   const classes = useStyles();
@@ -38,7 +34,7 @@ export default function ShoppingCartItem() {
         image="https://source.unsplash.com/random"
         title="Live from space album cover"
       />
-      <CardContent>
+      <CardContent className={classes.content}>
         <CardMedia
           className={classes.cover}
           image="https://source.unsplash.com/random"
