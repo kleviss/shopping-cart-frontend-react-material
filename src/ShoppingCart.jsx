@@ -17,13 +17,12 @@ export default function ShoppingCart() {
                 <ShoppingCartItem />
                 <ShoppingCartItem />
                 <ShoppingCartItem />
+                <ShoppingCartItem />
               </Grid>
             </Grid>
           </Grid>
           <Grid item xs={12} sm={6} md={5} lg={5}>
-            <Grid item xs elevation={3}>
-              <OrderSummaryItem />
-            </Grid>
+            <OrderSummaryItem />
           </Grid>
         </Grid>
       </Container>

@@ -9,8 +9,9 @@ import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles({
   root: {
-    minWidth: "275",
-    marginTop: "1rem"
+    position: "sticky",
+    top: "1rem",
+    minWidth: "275"
   },
 
   title: {
